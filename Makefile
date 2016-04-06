@@ -1,7 +1,9 @@
 PROJECT_DIR   = .
-USER_LIB_PATH = c:/Users/user/Documents/Arduino/libraries
-ARDUINO_LIBS = Adafruit_GFX_Library Adafruit_SSD1306 Wire OneWire SPI DallasTemperature
+ARDMK_DIR = $(PROJECT_DIR)/Arduino-Makefile
+ARDUINO_DIR = c:/Arduino
+USER_LIB_PATH := $(PROJECT_DIR)/lib
+ARDUINO_LIBS = Adafruit-GFX-Library Adafruit_SSD1306 Wire OneWire SPI Arduino-Temperature-Control-Library
 
-BOARD_TAG    = uno
+BOARD_TAG = uno
 
-include C:/Arduino/Arduino.mk
+include $(ARDMK_DIR)/Arduino.mk
